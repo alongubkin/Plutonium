@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1C3BB159-C6F5-490A-9C48-2C245F4EDFB5}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Plutonium.MapEditor</RootNamespace>
+    <AssemblyName>mapeditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>29c5735f-2413-4699-8de2-ae947a755678</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Krypton\Krypton\Krypton.csproj">
+      <Project>{B1BFCB2A-C001-4DAC-BA7D-B68BF28757F3}</Project>
+      <Name>Krypton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plutonium.GameData\Plutonium.GameData.csproj">
+      <Project>{08559E3F-F0D5-48BE-B589-6176A611A045}</Project>
+      <Name>Plutonium.GameData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plutonium.MapEditor.UI\Plutonium.MapEditor.UI.csproj">
+      <Project>{62AEEBCB-65E7-430C-BD6D-38D26E1F06F7}</Project>
+      <Name>Plutonium.MapEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plutonium.MapEditor2Content\Plutonium.MapEditor2Content.contentproj">
+      <Name>Plutonium.MapEditor2Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Objects\Body Equipment\Amazon_Armor.png" />
+    <Content Include="Objects\Body Equipment\Amazon_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Amazon_Shield.png" />
+    <Content Include="Objects\Body Equipment\Ancient_Shield.png" />
+    <Content Include="Objects\Body Equipment\Ancient_Tiara.png" />
+    <Content Include="Objects\Body Equipment\Ball_Gown.png" />
+    <Content Include="Objects\Body Equipment\Bandana.png" />
+    <Content Include="Objects\Body Equipment\Bast_Skirt.png" />
+    <Content Include="Objects\Body Equipment\Battle_Shield.png" />
+    <Content Include="Objects\Body Equipment\Batwing_Hat.png" />
+    <Content Include="Objects\Body Equipment\Belted_Cape.png" />
+    <Content Include="Objects\Body Equipment\Black_Shield.png" />
+    <Content Include="Objects\Body Equipment\Blessed_Shield.png" />
+    <Content Include="Objects\Body Equipment\Blue_Legs.png" />
+    <Content Include="Objects\Body Equipment\Blue_Robe.png" />
+    <Content Include="Objects\Body Equipment\Bonelord_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Bonelord_Shield.png" />
+    <Content Include="Objects\Body Equipment\Bone_Shield.png" />
+    <Content Include="Objects\Body Equipment\Boots_of_Haste.png" />
+    <Content Include="Objects\Body Equipment\Boots_of_Waterwalking.png" />
+    <Content Include="Objects\Body Equipment\Brass_Armor.png" />
+    <Content Include="Objects\Body Equipment\Brass_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Brass_Legs.png" />
+    <Content Include="Objects\Body Equipment\Brass_Shield.png" />
+    <Content Include="Objects\Body Equipment\Bunnyslippers.png" />
+    <Content Include="Objects\Body Equipment\Cape.png" />
+    <Content Include="Objects\Body Equipment\Castle_Shield.png" />
+    <Content Include="Objects\Body Equipment\Ceremonial_Mask.png" />
+    <Content Include="Objects\Body Equipment\Chain_Armor.png" />
+    <Content Include="Objects\Body Equipment\Chain_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Chain_Legs.png" />
+    <Content Include="Objects\Body Equipment\Charmer%27s_Tiara.png" />
+    <Content Include="Objects\Body Equipment\Coat.png" />
+    <Content Include="Objects\Body Equipment\Cobra_Crown.png" />
+    <Content Include="Objects\Body Equipment\Coconut_Shoes.png" />
+    <Content Include="Objects\Body Equipment\Copper_Shield.png" />
+    <Content Include="Objects\Body Equipment\Crocodile_Boots.png" />
+    <Content Include="Objects\Body Equipment\Crown_Armor.png" />
+    <Content Include="Objects\Body Equipment\Crown_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Crown_Legs.png" />
+    <Content Include="Objects\Body Equipment\Crown_Shield.png" />
+    <Content Include="Objects\Body Equipment\Crusader_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Crystalline_Armor.png" />
+    <Content Include="Objects\Body Equipment\Crystal_Boots.png" />
+    <Content Include="Objects\Body Equipment\Damaged_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Dark_Armor %281%29.png" />
+    <Content Include="Objects\Body Equipment\Dark_Armor.png" />
+    <Content Include="Objects\Body Equipment\Dark_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Dark_Lord%27s_Cape.png" />
+    <Content Include="Objects\Body Equipment\Dark_Shield.png" />
+    <Content Include="Objects\Body Equipment\Demon_Armor.png" />
+    <Content Include="Objects\Body Equipment\Demon_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Demon_Legs.png" />
+    <Content Include="Objects\Body Equipment\Demon_Shield.png" />
+    <Content Include="Objects\Body Equipment\Devil_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Divine_Plate.png" />
+    <Content Include="Objects\Body Equipment\Doublet.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Robe.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Scale_Boots.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Scale_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Scale_Legs.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Scale_Mail.png" />
+    <Content Include="Objects\Body Equipment\Dragon_Shield.png" />
+    <Content Include="Objects\Body Equipment\Draken_Boots.png" />
+    <Content Include="Objects\Body Equipment\Dwarven_Armor.png" />
+    <Content Include="Objects\Body Equipment\Dwarven_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Dwarven_Legs.png" />
+    <Content Include="Objects\Body Equipment\Dwarven_Shield.png" />
+    <Content Include="Objects\Body Equipment\Eagle_Shield.png" />
+    <Content Include="Objects\Body Equipment\Earthborn_Titan_Armor.png" />
+    <Content Include="Objects\Body Equipment\Elite_Draken_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Elite_Draken_Mail.png" />
+    <Content Include="Objects\Body Equipment\Elven_Legs.png" />
+    <Content Include="Objects\Body Equipment\Elven_Mail.png" />
+    <Content Include="Objects\Body Equipment\Ethno_Coat.png" />
+    <Content Include="Objects\Body Equipment\Feather_Headdress.png" />
+    <Content Include="Objects\Body Equipment\Ferumbras%27_Hat.png" />
+    <Content Include="Objects\Body Equipment\Fiery_Rainbow_Shield.png" />
+    <Content Include="Objects\Body Equipment\Fireborn_Giant_Armor.png" />
+    <Content Include="Objects\Body Equipment\Firewalker_Boots.png" />
+    <Content Include="Objects\Body Equipment\Flower_Dress.png" />
+    <Content Include="Objects\Body Equipment\Flower_Wreath.png" />
+    <Content Include="Objects\Body Equipment\Focus_Cape.png" />
+    <Content Include="Objects\Body Equipment\Frozen_Plate.png" />
+    <Content Include="Objects\Body Equipment\Full_Helmet_of_the_Ancients.png" />
+    <Content Include="Objects\Body Equipment\Fur_Boots.png" />
+    <Content Include="Objects\Body Equipment\Fur_Cap.png" />
+    <Content Include="Objects\Body Equipment\Girl%27s_Dress.png" />
+    <Content Include="Objects\Body Equipment\Glacier_Kilt.png" />
+    <Content Include="Objects\Body Equipment\Glacier_Mask.png" />
+    <Content Include="Objects\Body Equipment\Glacier_Robe.png" />
+    <Content Include="Objects\Body Equipment\Glacier_Shoes.png" />
+    <Content Include="Objects\Body Equipment\Golden_Armor.png" />
+    <Content Include="Objects\Body Equipment\Golden_Boots.png" />
+    <Content Include="Objects\Body Equipment\Golden_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Golden_Legs.png" />
+    <Content Include="Objects\Body Equipment\Great_Shield.png" />
+    <Content Include="Objects\Body Equipment\Greenwood_Coat.png" />
+    <Content Include="Objects\Body Equipment\Green_Tunic.png" />
+    <Content Include="Objects\Body Equipment\Griffin_Shield.png" />
+    <Content Include="Objects\Body Equipment\Guardian_Boots.png" />
+    <Content Include="Objects\Body Equipment\Guardian_Shield.png" />
+    <Content Include="Objects\Body Equipment\Hat_of_the_Mad.png" />
+    <Content Include="Objects\Body Equipment\Heavy_Metal_T-Shirt.png" />
+    <Content Include="Objects\Body Equipment\Helmet_of_Nature.png" />
+    <Content Include="Objects\Body Equipment\Helmet_of_the_Ancients.png" />
+    <Content Include="Objects\Body Equipment\Helmet_of_the_Deep.png" />
+    <Content Include="Objects\Body Equipment\Helmet_of_Ultimate_Terror.png" />
+    <Content Include="Objects\Body Equipment\Hibiscus_Dress.png" />
+    <Content Include="Objects\Body Equipment\Horned_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Horseman_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Icy_Rainbow_Shield.png" />
+    <Content Include="Objects\Body Equipment\Iron_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Jacket.png" />
+    <Content Include="Objects\Body Equipment\Jade_Hat.png" />
+    <Content Include="Objects\Body Equipment\Jester_Hat.png" />
+    <Content Include="Objects\Body Equipment\Knight_Armor.png" />
+    <Content Include="Objects\Body Equipment\Knight_Legs.png" />
+    <Content Include="Objects\Body Equipment\Krimhorn_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Lavos_Armor.png" />
+    <Content Include="Objects\Body Equipment\Leaf_Legs.png" />
+    <Content Include="Objects\Body Equipment\Leather_Armor.png" />
+    <Content Include="Objects\Body Equipment\Leather_Boots.png" />
+    <Content Include="Objects\Body Equipment\Leather_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Leather_Legs.png" />
+    <Content Include="Objects\Body Equipment\Legion_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Leopard_Armor.png" />
+    <Content Include="Objects\Body Equipment\Lightning_Boots.png" />
+    <Content Include="Objects\Body Equipment\Lightning_Headband.png" />
+    <Content Include="Objects\Body Equipment\Lightning_Legs.png" />
+    <Content Include="Objects\Body Equipment\Lightning_Robe.png" />
+    <Content Include="Objects\Body Equipment\Mage%27s_Cap.png" />
+    <Content Include="Objects\Body Equipment\Mage_Hat.png" />
+    <Content Include="Objects\Body Equipment\Magician%27s_Robe.png" />
+    <Content Include="Objects\Body Equipment\Magician_Hat.png" />
+    <Content Include="Objects\Body Equipment\Magic_Plate_Armor.png" />
+    <Content Include="Objects\Body Equipment\Magma_Boots.png" />
+    <Content Include="Objects\Body Equipment\Magma_Coat.png" />
+    <Content Include="Objects\Body Equipment\Magma_Legs.png" />
+    <Content Include="Objects\Body Equipment\Magma_Monocle.png" />
+    <Content Include="Objects\Body Equipment\Mammoth_Fur_Cape.png" />
+    <Content Include="Objects\Body Equipment\Mammoth_Fur_Shorts.png" />
+    <Content Include="Objects\Body Equipment\Mastermind_Shield.png" />
+    <Content Include="Objects\Body Equipment\Master_Archer%27s_Armor.png" />
+    <Content Include="Objects\Body Equipment\Medusa_Shield.png" />
+    <Content Include="Objects\Body Equipment\Mighty_Helm_of_Green_Sparks.png" />
+    <Content Include="Objects\Body Equipment\Mining_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Molten_Plate.png" />
+    <Content Include="Objects\Body Equipment\Mystic_Turban.png" />
+    <Content Include="Objects\Body Equipment\Native_Armor.png" />
+    <Content Include="Objects\Body Equipment\Necromancer_Shield.png" />
+    <Content Include="Objects\Body Equipment\Nightmare_Shield.png" />
+    <Content Include="Objects\Body Equipment\Noble_Armor.png" />
+    <Content Include="Objects\Body Equipment\Norse_Shield.png" />
+    <Content Include="Objects\Body Equipment\Oceanborn_Leviathan_Armor.png" />
+    <Content Include="Objects\Body Equipment\Odd_Hat.png" />
+    <Content Include="Objects\Body Equipment\Old_Cape.png" />
+    <Content Include="Objects\Body Equipment\Ornamented_Shield.png" />
+    <Content Include="Objects\Body Equipment\Pair_of_Soft_Boots.png" />
+    <Content Include="Objects\Body Equipment\Paladin_Armor.png" />
+    <Content Include="Objects\Body Equipment\Party_Hat.png" />
+    <Content Include="Objects\Body Equipment\Patched_Boots.png" />
+    <Content Include="Objects\Body Equipment\Phoenix_Shield.png" />
+    <Content Include="Objects\Body Equipment\Pirate_Boots.png" />
+    <Content Include="Objects\Body Equipment\Pirate_Hat.png" />
+    <Content Include="Objects\Body Equipment\Pirate_Knee_Breeches.png" />
+    <Content Include="Objects\Body Equipment\Pirate_Shirt.png" />
+    <Content Include="Objects\Body Equipment\Plate_Armor.png" />
+    <Content Include="Objects\Body Equipment\Plate_Legs.png" />
+    <Content Include="Objects\Body Equipment\Plate_Shield.png" />
+    <Content Include="Objects\Body Equipment\Post_Officer%27s_Hat.png" />
+    <Content Include="Objects\Body Equipment\Ragnir_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Rainbow_Shield.png" />
+    <Content Include="Objects\Body Equipment\Ranger%27s_Cloak.png" />
+    <Content Include="Objects\Body Equipment\Ranger_Legs.png" />
+    <Content Include="Objects\Body Equipment\Red_Robe.png" />
+    <Content Include="Objects\Body Equipment\Red_Tunic.png" />
+    <Content Include="Objects\Body Equipment\Robe_of_the_Ice_Queen.png" />
+    <Content Include="Objects\Body Equipment\Robe_of_the_Underworld.png" />
+    <Content Include="Objects\Body Equipment\Rose_Shield.png" />
+    <Content Include="Objects\Body Equipment\Royal_Draken_Mail.png" />
+    <Content Include="Objects\Body Equipment\Royal_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Royal_Scale_Robe.png" />
+    <Content Include="Objects\Body Equipment\Salamander_Shield.png" />
+    <Content Include="Objects\Body Equipment\Sandals.png" />
+    <Content Include="Objects\Body Equipment\Scale_Armor.png" />
+    <Content Include="Objects\Body Equipment\Scarab_Shield.png" />
+    <Content Include="Objects\Body Equipment\Sedge_Hat.png" />
+    <Content Include="Objects\Body Equipment\Sentinel_Shield.png" />
+    <Content Include="Objects\Body Equipment\Shield_of_Care.png" />
+    <Content Include="Objects\Body Equipment\Shield_of_Corruption.png" />
+    <Content Include="Objects\Body Equipment\Shield_of_Honour.png" />
+    <Content Include="Objects\Body Equipment\Shield_of_the_White_Knight.png" />
+    <Content Include="Objects\Body Equipment\Simple_Dress.png" />
+    <Content Include="Objects\Body Equipment\Skullcracker_Armor.png" />
+    <Content Include="Objects\Body Equipment\Skull_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Soldier_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Sparking_Rainbow_Shield.png" />
+    <Content Include="Objects\Body Equipment\Spellweaver%27s_Robe.png" />
+    <Content Include="Objects\Body Equipment\Spirit_Cloak.png" />
+    <Content Include="Objects\Body Equipment\Steel_Boots.png" />
+    <Content Include="Objects\Body Equipment\Steel_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Steel_Shield.png" />
+    <Content Include="Objects\Body Equipment\Strange_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Studded_Armor.png" />
+    <Content Include="Objects\Body Equipment\Studded_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Studded_Legs.png" />
+    <Content Include="Objects\Body Equipment\Studded_Shield.png" />
+    <Content Include="Objects\Body Equipment\Summer_Dress.png" />
+    <Content Include="Objects\Body Equipment\Swamplair_Armor.png" />
+    <Content Include="Objects\Body Equipment\Tempest_Shield.png" />
+    <Content Include="Objects\Body Equipment\Terran_Rainbow_Shield.png" />
+    <Content Include="Objects\Body Equipment\Terra_Boots.png" />
+    <Content Include="Objects\Body Equipment\Terra_Hood.png" />
+    <Content Include="Objects\Body Equipment\Terra_Legs.png" />
+    <Content Include="Objects\Body Equipment\Terra_Mantle.png" />
+    <Content Include="Objects\Body Equipment\The_Rain_Coat.png" />
+    <Content Include="Objects\Body Equipment\The_Shield_Nevermourn.png" />
+    <Content Include="Objects\Body Equipment\Tortoise_Shield.png" />
+    <Content Include="Objects\Body Equipment\Tower_Shield.png" />
+    <Content Include="Objects\Body Equipment\Tribal_Mask.png" />
+    <Content Include="Objects\Body Equipment\Trousers_of_the_Ancients.png" />
+    <Content Include="Objects\Body Equipment\Tunic.png" />
+    <Content Include="Objects\Body Equipment\Tusk_Shield.png" />
+    <Content Include="Objects\Body Equipment\Vampire_Shield.png" />
+    <Content Include="Objects\Body Equipment\Velvet_Mantle.png" />
+    <Content Include="Objects\Body Equipment\Viking_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Viking_Shield.png" />
+    <Content Include="Objects\Body Equipment\Voltage_Armor.png" />
+    <Content Include="Objects\Body Equipment\Warrior_Helmet.png" />
+    <Content Include="Objects\Body Equipment\White_Dress.png" />
+    <Content Include="Objects\Body Equipment\Windborn_Colossus_Armor.png" />
+    <Content Include="Objects\Body Equipment\Winged_Helmet.png" />
+    <Content Include="Objects\Body Equipment\Witchhunter%27s_Coat.png" />
+    <Content Include="Objects\Body Equipment\Witch_Hat.png" />
+    <Content Include="Objects\Body Equipment\Wooden_Shield.png" />
+    <Content Include="Objects\Body Equipment\Wood_Cape.png" />
+    <Content Include="Objects\Body Equipment\Yalahari_Armor.png" />
+    <Content Include="Objects\Body Equipment\Yalahari_Leg_Piece.png" />
+    <Content Include="Objects\Body Equipment\Yalahari_Mask.png" />
+    <Content Include="Objects\Body Equipment\Zaoan_Armor.png" />
+    <Content Include="Objects\Body Equipment\Zaoan_Legs.png" />
+    <Content Include="Objects\Body Equipment\Zaoan_Robe.png" />
+    <Content Include="Objects\Body Equipment\Zaoan_Shoes.png" />
+    <Content Include="Objects\Constructions\Bed.png" />
+    <Content Include="Objects\Constructions\Bench.png" />
+    <Content Include="Objects\Constructions\Crate_%28Usable%29.png" />
+    <Content Include="Objects\Constructions\Draw_Well.png" />
+    <Content Include="Objects\Constructions\Heavy_Trunk.png" />
+    <Content Include="Objects\Constructions\Luxurious_Couch.png" />
+    <Content Include="Objects\Constructions\Small_Shed.png" />
+    <Content Include="Objects\Constructions\Steering_Wheel.png" />
+    <Content Include="Objects\Constructions\Tent.png" />
+    <Content Include="Objects\Constructions\Throne.png" />
+    <Content Include="Objects\Constructions\Throne_%28Royal%29.png" />
+    <Content Include="Objects\Constructions\Treasure_Chest.png" />
+    <Content Include="Objects\Constructions\Treasure_Chest_%28Ornamented%29.png" />
+    <Content Include="Objects\Creatures\amazon.png" />
+    <Content Include="Objects\Creatures\assassin.png" />
+    <Content Include="Objects\Creatures\badger.png" />
+    <Content Include="Objects\Creatures\bandit.png" />
+    <Content Include="Objects\Creatures\barbarianbloodwalker.png" />
+    <Content Include="Objects\Creatures\barbarianbrutetamer.png" />
+    <Content Include="Objects\Creatures\barbarianheadsplitter.png" />
+    <Content Include="Objects\Creatures\barbarianskullhunter.png" />
+    <Content Include="Objects\Creatures\bat.png" />
+    <Content Include="Objects\Creatures\bear.png" />
+    <Content Include="Objects\Creatures\behemoth.png" />
+    <Content Include="Objects\Creatures\blackknight.png" />
+    <Content Include="Objects\Creatures\boar.png" />
+    <Content Include="Objects\Creatures\butterflypurple.png" />
+    <Content Include="Objects\Creatures\cat.png" />
+    <Content Include="Objects\Creatures\caverat.png" />
+    <Content Include="Objects\Creatures\chicken.png" />
+    <Content Include="Objects\Creatures\cobra.png" />
+    <Content Include="Objects\Creatures\crab.png" />
+    <Content Include="Objects\Creatures\crocodile.png" />
+    <Content Include="Objects\Creatures\cultnovice.png" />
+    <Content Include="Objects\Creatures\cyclops.png" />
+    <Content Include="Objects\Creatures\darkapprentice.png" />
+    <Content Include="Objects\Creatures\darkmagician.png" />
+    <Content Include="Objects\Creatures\darkmonk.png" />
+    <Content Include="Objects\Creatures\deer.png" />
+    <Content Include="Objects\Creatures\demonskeleton.png" />
+    <Content Include="Objects\Creatures\dog.png" />
+    <Content Include="Objects\Creatures\dromedary.png" />
+    <Content Include="Objects\Creatures\dwarf.png" />
+    <Content Include="Objects\Creatures\dwarfgeomancer.png" />
+    <Content Include="Objects\Creatures\dwarfguard.png" />
+    <Content Include="Objects\Creatures\dwarfminer.png" />
+    <Content Include="Objects\Creatures\dwarfsoldier.png" />
+    <Content Include="Objects\Creatures\elephant.png" />
+    <Content Include="Objects\Creatures\elf.png" />
+    <Content Include="Objects\Creatures\elfarcanist.png" />
+    <Content Include="Objects\Creatures\elfscout.png" />
+    <Content Include="Objects\Creatures\filthtoad.png" />
+    <Content Include="Objects\Creatures\flamingo.png" />
+    <Content Include="Objects\Creatures\gangmember.png" />
+    <Content Include="Objects\Creatures\ghost.png" />
+    <Content Include="Objects\Creatures\ghoul.png" />
+    <Content Include="Objects\Creatures\goblin.png" />
+    <Content Include="Objects\Creatures\goblinassassin.png" />
+    <Content Include="Objects\Creatures\goblinscavenger.png" />
+    <Content Include="Objects\Creatures\hero.png" />
+    <Content Include="Objects\Creatures\hunter.png" />
+    <Content Include="Objects\Creatures\husky.png" />
+    <Content Include="Objects\Creatures\hyaena.png" />
+    <Content Include="Objects\Creatures\killercaiman.png" />
+    <Content Include="Objects\Creatures\kongra.png" />
+    <Content Include="Objects\Creatures\lion.png" />
+    <Content Include="Objects\Creatures\lostsoul.png" />
+    <Content Include="Objects\Creatures\midnightpanther.png" />
+    <Content Include="Objects\Creatures\nomad.png" />
+    <Content Include="Objects\Creatures\orc.png" />
+    <Content Include="Objects\Creatures\orcberserker.png" />
+    <Content Include="Objects\Creatures\orcleader.png" />
+    <Content Include="Objects\Creatures\orcrider.png" />
+    <Content Include="Objects\Creatures\orcshaman.png" />
+    <Content Include="Objects\Creatures\orcspearman.png" />
+    <Content Include="Objects\Creatures\orcwarlord.png" />
+    <Content Include="Objects\Creatures\orcwarrior.png" />
+    <Content Include="Objects\Creatures\panda.png" />
+    <Content Include="Objects\Creatures\parrot.png" />
+    <Content Include="Objects\Creatures\penguin.png" />
+    <Content Include="Objects\Creatures\pig.png" />
+    <Content Include="Objects\Creatures\piratebuccaneer.png" />
+    <Content Include="Objects\Creatures\piratecorsair.png" />
+    <Content Include="Objects\Creatures\piratecutthroat.png" />
+    <Content Include="Objects\Creatures\piratemarauder.png" />
+    <Content Include="Objects\Creatures\pirateskeleton.png" />
+    <Content Include="Objects\Creatures\poisonspider.png" />
+    <Content Include="Objects\Creatures\polarbear.png" />
+    <Content Include="Objects\Creatures\priestess.png" />
+    <Content Include="Objects\Creatures\rabbit.png" />
+    <Content Include="Objects\Creatures\rat.png" />
+    <Content Include="Objects\Creatures\scorpion.png" />
+    <Content Include="Objects\Creatures\seagull.png" />
+    <Content Include="Objects\Creatures\sheep.png" />
+    <Content Include="Objects\Creatures\sibang.png" />
+    <Content Include="Objects\Creatures\silverrabbit.png" />
+    <Content Include="Objects\Creatures\skeleton.png" />
+    <Content Include="Objects\Creatures\skeletonwarrior.png" />
+    <Content Include="Objects\Creatures\skunk.png" />
+    <Content Include="Objects\Creatures\smuggler.png" />
+    <Content Include="Objects\Creatures\snake.png" />
+    <Content Include="Objects\Creatures\spider.png" />
+    <Content Include="Objects\Creatures\squirrel.png" />
+    <Content Include="Objects\Creatures\stalker.png" />
+    <Content Include="Objects\Creatures\tarantula.png" />
+    <Content Include="Objects\Creatures\tiger.png" />
+    <Content Include="Objects\Creatures\tortoise.png" />
+    <Content Include="Objects\Creatures\warlock.png" />
+    <Content Include="Objects\Creatures\warwolf.png" />
+    <Content Include="Objects\Creatures\wasp.png" />
+    <Content Include="Objects\Creatures\wildwarrior.png" />
+    <Content Include="Objects\Creatures\winterwolf.png" />
+    <Content Include="Objects\Creatures\wolf.png" />
+    <Content Include="Objects\Doors and Windows\Brick_Window.png" />
+    <Content Include="Objects\Doors and Windows\Cave_Entrance.png" />
+    <Content Include="Objects\Doors and Windows\Cave_Entrance_%28Mine%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28Bones%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28House%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28Iron_Bars%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28Normal%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28Sealed%29.png" />
+    <Content Include="Objects\Doors and Windows\Door_%28Wooden%29.png" />
+    <Content Include="Objects\Doors and Windows\Framework_Window.png" />
+    <Content Include="Objects\Doors and Windows\Gate_of_Expertise.png" />
+    <Content Include="Objects\Doors and Windows\Ship_Cabin_Wall_Window.png" />
+    <Content Include="Objects\Doors and Windows\Stone_Wall_Window.png" />
+    <Content Include="Objects\Doors and Windows\Stone_Wall_Window_%28Normal%29.png" />
+    <Content Include="Objects\Doors and Windows\Tree_Hole.png" />
+    <Content Include="Objects\Doors and Windows\White_Stone_Wall_Window.png" />
+    <Content Include="Objects\Flags and signs\Carlin_Banner.png" />
+    <Content Include="Objects\Flags and signs\Castle_Flag.png" />
+    <Content Include="Objects\Flags and signs\Dragon_Banner_%28Purple%29.png" />
+    <Content Include="Objects\Flags and signs\Dragon_Banner_%28Red%29.png" />
+    <Content Include="Objects\Flags and signs\Dragon_Banner_%28Wall%29.png" />
+    <Content Include="Objects\Flags and signs\Dragon_Flag.png" />
+    <Content Include="Objects\Flags and signs\Flag_of_Tibia.png" />
+    <Content Include="Objects\Flags and signs\Pirate_Flag.png" />
+    <Content Include="Objects\Flags and signs\Sign.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Armory%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Blank%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Depot%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Equipment%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Fletcher%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Food%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Fruit%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Fruit2%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Furniture%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Jewelry%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Left%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Library%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Magic%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Post%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Right%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Smith%29.png" />
+    <Content Include="Objects\Flags and signs\Sign_%28Tavern%29.png" />
+    <Content Include="Objects\Flags and signs\Street_Sign.png" />
+    <Content Include="Objects\Flags and signs\Warning_Sign.png" />
+    <Content Include="Objects\Flags and signs\White_Flag.png" />
+    <Content Include="Objects\Floor decos\Ant_Trail.png" />
+    <Content Include="Objects\Floor decos\Badger_Fur_%28Object%29.png" />
+    <Content Include="Objects\Floor decos\Blue_Carpet.png" />
+    <Content Include="Objects\Floor decos\Brown_Bear_Fur.png" />
+    <Content Include="Objects\Floor decos\Brown_Carpet.png" />
+    <Content Include="Objects\Floor decos\Green_Carpet.png" />
+    <Content Include="Objects\Floor decos\Oriental_Carpet.png" />
+    <Content Include="Objects\Floor decos\Polar_Bear_Fur.png" />
+    <Content Include="Objects\Floor decos\Red_Carpet.png" />
+    <Content Include="Objects\Natural\32px-Banana_Tree.png" />
+    <Content Include="Objects\Natural\32px-Coconut_Palm.png" />
+    <Content Include="Objects\Natural\32px-Palm.png" />
+    <Content Include="Objects\Natural\Agave.png" />
+    <Content Include="Objects\Natural\Apocalypse_Mushroom.png" />
+    <Content Include="Objects\Natural\Banana_Palm.png" />
+    <Content Include="Objects\Natural\Banana_Tree.png" />
+    <Content Include="Objects\Natural\Beech.png" />
+    <Content Include="Objects\Natural\Birch.png" />
+    <Content Include="Objects\Natural\Blooming_Griffinclaw.png" />
+    <Content Include="Objects\Natural\Blueberry_Bush.png" />
+    <Content Include="Objects\Natural\Bog_Fingers_Plant.png" />
+    <Content Include="Objects\Natural\Bush.png" />
+    <Content Include="Objects\Natural\Cactus_%28Large%29.png" />
+    <Content Include="Objects\Natural\Cactus_%28Round%29.png" />
+    <Content Include="Objects\Natural\Cactus_%28Sharp%29.png" />
+    <Content Include="Objects\Natural\Cactus_%28Small%29.png" />
+    <Content Include="Objects\Natural\Cactus_%28Spiky%29.png" />
+    <Content Include="Objects\Natural\Cactus_%28Thick%29.png" />
+    <Content Include="Objects\Natural\Cat%27s_Food_Mushrooms.png" />
+    <Content Include="Objects\Natural\Coconut_Palm.png" />
+    <Content Include="Objects\Natural\Coral.png" />
+    <Content Include="Objects\Natural\Coral_%28Blue%29.png" />
+    <Content Include="Objects\Natural\Coral_%28Grey%29.png" />
+    <Content Include="Objects\Natural\Coral_%28Large%29.png" />
+    <Content Include="Objects\Natural\Coral_%28Small%29.png" />
+    <Content Include="Objects\Natural\Coral_%28Teal%29.png" />
+    <Content Include="Objects\Natural\Crane_Plant.png" />
+    <Content Include="Objects\Natural\Dawn_Singer.png" />
+    <Content Include="Objects\Natural\Dead_Man%27s_Saddles.png" />
+    <Content Include="Objects\Natural\Dead_Tree.png" />
+    <Content Include="Objects\Natural\Dew_Kisser_Flower.png" />
+    <Content Include="Objects\Natural\Dragons_Nest_Tree.png" />
+    <Content Include="Objects\Natural\Dry_Bush.png" />
+    <Content Include="Objects\Natural\Dry_Griffinclaw.png" />
+    <Content Include="Objects\Natural\Dry_Mangrove.png" />
+    <Content Include="Objects\Natural\Dry_Solstice_Tree.png" />
+    <Content Include="Objects\Natural\Dusk_Catcher.png" />
+    <Content Include="Objects\Natural\Dwarf_Tree.png" />
+    <Content Include="Objects\Natural\Earth_Mountain.png" />
+    <Content Include="Objects\Natural\Fairy_Queen.png" />
+    <Content Include="Objects\Natural\Fir_Tree.png" />
+    <Content Include="Objects\Natural\Frog_Leaf.png" />
+    <Content Include="Objects\Natural\Giant_Glimmer_Cap_Mushroom.png" />
+    <Content Include="Objects\Natural\Giant_Tree.png" />
+    <Content Include="Objects\Natural\Giggle_Mushroom.png" />
+    <Content Include="Objects\Natural\Giggle_Mushrooms.png" />
+    <Content Include="Objects\Natural\Glimmer_Cap_Mushroom.png" />
+    <Content Include="Objects\Natural\Glimmer_Cap_Mushrooms.png" />
+    <Content Include="Objects\Natural\Greasy_Stone.png" />
+    <Content Include="Objects\Natural\Green_Fountain_Bush.png" />
+    <Content Include="Objects\Natural\Green_Wig_Bush.png" />
+    <Content Include="Objects\Natural\Heaven_Blossoms.png" />
+    <Content Include="Objects\Natural\Inactive_Geyser.png" />
+    <Content Include="Objects\Natural\Infected_Throne.png" />
+    <Content Include="Objects\Natural\Jagged_Stones.png" />
+    <Content Include="Objects\Natural\Jungle_Bells_Plant.png" />
+    <Content Include="Objects\Natural\Jungle_Dweller_Bush.png" />
+    <Content Include="Objects\Natural\Jungle_Rose.png" />
+    <Content Include="Objects\Natural\Kelp.png" />
+    <Content Include="Objects\Natural\Lady_in_the_Fog_Plant.png" />
+    <Content Include="Objects\Natural\Large_Seashell.png" />
+    <Content Include="Objects\Natural\Lava_Hole_%28Active%29.png" />
+    <Content Include="Objects\Natural\Lava_Hole_%28Inactive%29.png" />
+    <Content Include="Objects\Natural\Lizards_Tongue_Bush.png" />
+    <Content Include="Objects\Natural\Love_Flower.png" />
+    <Content Include="Objects\Natural\Mangrove_%28Large%29.png" />
+    <Content Include="Objects\Natural\Mangrove_%28Medium%29.png" />
+    <Content Include="Objects\Natural\Mangrove_%28Small%29.png" />
+    <Content Include="Objects\Natural\Mangrove_%28Small_Dry%29.png" />
+    <Content Include="Objects\Natural\Meadow_Star.png" />
+    <Content Include="Objects\Natural\Mire_Sprout.png" />
+    <Content Include="Objects\Natural\Moon_Flowers.png" />
+    <Content Include="Objects\Natural\Moon_Herb.png" />
+    <Content Include="Objects\Natural\Mossy_Stone_%28Normal%29.png" />
+    <Content Include="Objects\Natural\Mossy_Stone_%28round%29.png" />
+    <Content Include="Objects\Natural\Mountain.png" />
+    <Content Include="Objects\Natural\Mourning_Mushroom.png" />
+    <Content Include="Objects\Natural\Mud_Whip.png" />
+    <Content Include="Objects\Natural\Old_Tree.png" />
+    <Content Include="Objects\Natural\Orange_Tree.png" />
+    <Content Include="Objects\Natural\Palm.png" />
+    <Content Include="Objects\Natural\Pawpaw_Tree.png" />
+    <Content Include="Objects\Natural\Pear_Tree.png" />
+    <Content Include="Objects\Natural\Pestbringer.png" />
+    <Content Include="Objects\Natural\Piece_of_a_Shell.png" />
+    <Content Include="Objects\Natural\Pine.png" />
+    <Content Include="Objects\Natural\Plum_Tree.png" />
+    <Content Include="Objects\Natural\Poplar.png" />
+    <Content Include="Objects\Natural\Purple_Kiss_Bush.png" />
+    <Content Include="Objects\Natural\Red_Maple.png" />
+    <Content Include="Objects\Natural\Red_Shrine_Stone.png" />
+    <Content Include="Objects\Natural\Royal_Blossom.png" />
+    <Content Include="Objects\Natural\Seashell.png" />
+    <Content Include="Objects\Natural\Sea_Anemone.png" />
+    <Content Include="Objects\Natural\Shell.png" />
+    <Content Include="Objects\Natural\Slime_Table_Mushrooms.png" />
+    <Content Include="Objects\Natural\Sludge_Fern.png" />
+    <Content Include="Objects\Natural\Small_Fern.png" />
+    <Content Include="Objects\Natural\Small_Fir_Tree.png" />
+    <Content Include="Objects\Natural\Small_Pearl_Flower.png" />
+    <Content Include="Objects\Natural\Snake_Nest_Bush.png" />
+    <Content Include="Objects\Natural\Sneeze_Blossom.png" />
+    <Content Include="Objects\Natural\Snowy_Dead_Tree_%28Branched%29.png" />
+    <Content Include="Objects\Natural\Snowy_Dead_Tree_%28Half_Alive%29.png" />
+    <Content Include="Objects\Natural\Snowy_Dead_Tree_%28Rotten%29.png" />
+    <Content Include="Objects\Natural\Snowy_Dead_Tree_%28Twisted%29.png" />
+    <Content Include="Objects\Natural\Snowy_Fir_Tree.png" />
+    <Content Include="Objects\Natural\Snowy_Pine_Tree.png" />
+    <Content Include="Objects\Natural\Some_Broken_Shells.png" />
+    <Content Include="Objects\Natural\Some_Sunflowers.png" />
+    <Content Include="Objects\Natural\Spiral_Shell.png" />
+    <Content Include="Objects\Natural\Stalagmite_%28Object%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Big%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Medium%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Normal%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Small%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Underwater%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Underwater_Short%29.png" />
+    <Content Include="Objects\Natural\Stone_%28Underwater_Tall%29.png" />
+    <Content Include="Objects\Natural\Sunflower.png" />
+    <Content Include="Objects\Natural\Sun_Adorer_Cactus.png" />
+    <Content Include="Objects\Natural\Sun_Flowers.png" />
+    <Content Include="Objects\Natural\Swamp_Lilly.png" />
+    <Content Include="Objects\Natural\Swamp_Reed.png" />
+    <Content Include="Objects\Natural\Swamp_Tentacles.png" />
+    <Content Include="Objects\Natural\Sycamore.png" />
+    <Content Include="Objects\Natural\Thread_Tree.png" />
+    <Content Include="Objects\Natural\Titans_Orchid.png" />
+    <Content Include="Objects\Natural\Turtle_Sprouter.png" />
+    <Content Include="Objects\Natural\White_Flower.png" />
+    <Content Include="Objects\Natural\Willow.png" />
+    <Content Include="Objects\Natural\Yellow_Maple.png" />
+    <Content Include="Objects\Other Items\Almanac_of_Magic.png" />
+    <Content Include="Objects\Other Items\Amulet_of_Life.png" />
+    <Content Include="Objects\Other Items\Amulet_of_Loss.png" />
+    <Content Include="Objects\Other Items\Ancient_Amulet.png" />
+    <Content Include="Objects\Other Items\Ancient_Stone.png" />
+    <Content Include="Objects\Other Items\Antidote_Potion.png" />
+    <Content Include="Objects\Other Items\Armor_Rack.png" />
+    <Content Include="Objects\Other Items\Axe_Ring.png" />
+    <Content Include="Objects\Other Items\Backpack.png" />
+    <Content Include="Objects\Other Items\Backpack_of_Holding.png" />
+    <Content Include="Objects\Other Items\Bag.png" />
+    <Content Include="Objects\Other Items\Bait.png" />
+    <Content Include="Objects\Other Items\Ball_on_Chains.png" />
+    <Content Include="Objects\Other Items\Bamboo_Drawer.png" />
+    <Content Include="Objects\Other Items\Bamboo_Shelf.png" />
+    <Content Include="Objects\Other Items\Bamboo_Table.png" />
+    <Content Include="Objects\Other Items\Banana.png" />
+    <Content Include="Objects\Other Items\Banana_Sash.png" />
+    <Content Include="Objects\Other Items\Banana_Skin.jpg" />
+    <Content Include="Objects\Other Items\Barrel.png" />
+    <Content Include="Objects\Other Items\Barrel_%28Brown%29.png" />
+    <Content Include="Objects\Other Items\Battle_Hammer.png" />
+    <Content Include="Objects\Other Items\Battle_Stone.png" />
+    <Content Include="Objects\Other Items\Beach_Backpack.png" />
+    <Content Include="Objects\Other Items\Beach_Bag.png" />
+    <Content Include="Objects\Other Items\Beer.png" />
+    <Content Include="Objects\Other Items\Beetroot.png" />
+    <Content Include="Objects\Other Items\Bejeweled_Ship%27s_Telescope.png" />
+    <Content Include="Objects\Other Items\Big_Blue_Demona_Book.png" />
+    <Content Include="Objects\Other Items\Big_Bone.png" />
+    <Content Include="Objects\Other Items\Big_Table.png" />
+    <Content Include="Objects\Other Items\Birdcage.png" />
+    <Content Include="Objects\Other Items\Black_Book.png" />
+    <Content Include="Objects\Other Items\Black_Hood.png" />
+    <Content Include="Objects\Other Items\Black_Pearl.png" />
+    <Content Include="Objects\Other Items\Black_Skull_%28Item%29.png" />
+    <Content Include="Objects\Other Items\Blank_Paper.png" />
+    <Content Include="Objects\Other Items\Blood.png" />
+    <Content Include="Objects\Other Items\Bloodkiss_Flower.png" />
+    <Content Include="Objects\Other Items\Blood_Goblet.png" />
+    <Content Include="Objects\Other Items\Blood_Herb.png" />
+    <Content Include="Objects\Other Items\Blueberry.png" />
+    <Content Include="Objects\Other Items\Blue_Backpack.png" />
+    <Content Include="Objects\Other Items\Blue_Bag.png" />
+    <Content Include="Objects\Other Items\Blue_Book.png" />
+    <Content Include="Objects\Other Items\Blue_Gem.png" />
+    <Content Include="Objects\Other Items\Blue_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Blue_Rose.png" />
+    <Content Include="Objects\Other Items\Blue_Tome.png" />
+    <Content Include="Objects\Other Items\Bone.png" />
+    <Content Include="Objects\Other Items\Bone_Key.png" />
+    <Content Include="Objects\Other Items\Bookcase %281%29.png" />
+    <Content Include="Objects\Other Items\Bookcase.png" />
+    <Content Include="Objects\Other Items\Book_%28CGB%29.png" />
+    <Content Include="Objects\Other Items\Book_of_Necromantic_Rituals.png" />
+    <Content Include="Objects\Other Items\Book_of_Orc_Language.png" />
+    <Content Include="Objects\Other Items\Book_of_Prayers.png" />
+    <Content Include="Objects\Other Items\Botany_Almanach.png" />
+    <Content Include="Objects\Other Items\Bottle.png" />
+    <Content Include="Objects\Other Items\Bowl.png" />
+    <Content Include="Objects\Other Items\Bowl_of_Evergreen_Flowers.png" />
+    <Content Include="Objects\Other Items\Box %281%29.png" />
+    <Content Include="Objects\Other Items\Box.png" />
+    <Content Include="Objects\Other Items\Box_%28Brown%29.png" />
+    <Content Include="Objects\Other Items\Bread.png" />
+    <Content Include="Objects\Other Items\Brocade_Backpack.png" />
+    <Content Include="Objects\Other Items\Brocade_Bag.png" />
+    <Content Include="Objects\Other Items\Broken_Amulet.png" />
+    <Content Include="Objects\Other Items\Broken_Bottle.png" />
+    <Content Include="Objects\Other Items\Broken_Brown_Glass.png" />
+    <Content Include="Objects\Other Items\Broken_Green_Glass.png" />
+    <Content Include="Objects\Other Items\Broken_Key_Ring.png" />
+    <Content Include="Objects\Other Items\Broken_Piggy_Bank.png" />
+    <Content Include="Objects\Other Items\Broken_Pottery.png" />
+    <Content Include="Objects\Other Items\Broken_Sword.png" />
+    <Content Include="Objects\Other Items\Broken_Wedding_Ring.png" />
+    <Content Include="Objects\Other Items\Bronze_Amulet.png" />
+    <Content Include="Objects\Other Items\Bronze_Necklace.png" />
+    <Content Include="Objects\Other Items\Broom.png" />
+    <Content Include="Objects\Other Items\Brown_Book.png" />
+    <Content Include="Objects\Other Items\Brown_Bread.png" />
+    <Content Include="Objects\Other Items\Brown_Flask.png" />
+    <Content Include="Objects\Other Items\Brown_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Brown_Square_Book.png" />
+    <Content Include="Objects\Other Items\Brown_Thin_Book.png" />
+    <Content Include="Objects\Other Items\Bucket.png" />
+    <Content Include="Objects\Other Items\Bulb_of_Garlic.png" />
+    <Content Include="Objects\Other Items\Burnt_Scroll.png" />
+    <Content Include="Objects\Other Items\Burst_Arrow.png" />
+    <Content Include="Objects\Other Items\Camouflage_Backpack.png" />
+    <Content Include="Objects\Other Items\Camouflage_Bag.png" />
+    <Content Include="Objects\Other Items\Candelabrum.png" />
+    <Content Include="Objects\Other Items\Candlestick.png" />
+    <Content Include="Objects\Other Items\Carrot.png" />
+    <Content Include="Objects\Other Items\Charged_Ghost_Charm.png" />
+    <Content Include="Objects\Other Items\Cheese.png" />
+    <Content Include="Objects\Other Items\Cherry.png" />
+    <Content Include="Objects\Other Items\Chest.png" />
+    <Content Include="Objects\Other Items\Christmas_Card.png" />
+    <Content Include="Objects\Other Items\Closed_Trap.png" />
+    <Content Include="Objects\Other Items\Club_of_the_Fury.png" />
+    <Content Include="Objects\Other Items\Club_Ring.png" />
+    <Content Include="Objects\Other Items\Coconut.png" />
+    <Content Include="Objects\Other Items\Coconut_Milk.png" />
+    <Content Include="Objects\Other Items\Comb.png" />
+    <Content Include="Objects\Other Items\Combat_Knife.png" />
+    <Content Include="Objects\Other Items\Concentrated_Demonic_Blood.png" />
+    <Content Include="Objects\Other Items\Cookbook.png" />
+    <Content Include="Objects\Other Items\Copper_Key.png" />
+    <Content Include="Objects\Other Items\Corncob.png" />
+    <Content Include="Objects\Other Items\Crate.png" />
+    <Content Include="Objects\Other Items\Crown_Backpack.png" />
+    <Content Include="Objects\Other Items\Crystal_Coin.png" />
+    <Content Include="Objects\Other Items\Crystal_Key.png" />
+    <Content Include="Objects\Other Items\Crystal_Necklace.png" />
+    <Content Include="Objects\Other Items\Crystal_of_Balance.png" />
+    <Content Include="Objects\Other Items\Crystal_of_Focus.png" />
+    <Content Include="Objects\Other Items\Crystal_of_Power.png" />
+    <Content Include="Objects\Other Items\Crystal_Ring.png" />
+    <Content Include="Objects\Other Items\Cuckoo_Clock.png" />
+    <Content Include="Objects\Other Items\Cucumber.png" />
+    <Content Include="Objects\Other Items\Cup.png" />
+    <Content Include="Objects\Other Items\Cup_%28Dwarven%29.png" />
+    <Content Include="Objects\Other Items\Cup_%28Pirate%29.png" />
+    <Content Include="Objects\Other Items\Dark_Rosary.png" />
+    <Content Include="Objects\Other Items\Death_Ring.png" />
+    <Content Include="Objects\Other Items\Decorated_Cake.png" />
+    <Content Include="Objects\Other Items\Demonbone_Amulet.png" />
+    <Content Include="Objects\Other Items\Demon_Backpack.png" />
+    <Content Include="Objects\Other Items\Dirty_Cape.png" />
+    <Content Include="Objects\Other Items\Dirty_Fur.png" />
+    <Content Include="Objects\Other Items\Dirty_Turban.png" />
+    <Content Include="Objects\Other Items\Djinn%27s_Lamp.png" />
+    <Content Include="Objects\Other Items\Dragon_Backpack.png" />
+    <Content Include="Objects\Other Items\Dragon_Necklace.png" />
+    <Content Include="Objects\Other Items\Drawers %281%29.png" />
+    <Content Include="Objects\Other Items\Drawers.png" />
+    <Content Include="Objects\Other Items\Dresser %281%29.png" />
+    <Content Include="Objects\Other Items\Dresser.png" />
+    <Content Include="Objects\Other Items\Dwarven_Ring.png" />
+    <Content Include="Objects\Other Items\Earth_Arrow.png" />
+    <Content Include="Objects\Other Items\Edged_Mirror.png" />
+    <Content Include="Objects\Other Items\Elvenhair_Rope.png" />
+    <Content Include="Objects\Other Items\Elven_Amulet.png" />
+    <Content Include="Objects\Other Items\Emerald_Bangle.png" />
+    <Content Include="Objects\Other Items\Energy_Ring.png" />
+    <Content Include="Objects\Other Items\Engraved_Wedding_Ring.png" />
+    <Content Include="Objects\Other Items\Ewer.png" />
+    <Content Include="Objects\Other Items\Exotic_Flowers.png" />
+    <Content Include="Objects\Other Items\Expedition_Backpack.png" />
+    <Content Include="Objects\Other Items\Eye_Patch.png" />
+    <Content Include="Objects\Other Items\Fat_Green_Book.png" />
+    <Content Include="Objects\Other Items\Ferumbras%27_Hat.png" />
+    <Content Include="Objects\Other Items\Fish.png" />
+    <Content Include="Objects\Other Items\Fishbone.png" />
+    <Content Include="Objects\Other Items\Fishing_Rod.png" />
+    <Content Include="Objects\Other Items\Fish_Tail.png" />
+    <Content Include="Objects\Other Items\Flower_Bouquet.png" />
+    <Content Include="Objects\Other Items\Flower_Bowl.png" />
+    <Content Include="Objects\Other Items\Frozen_Starlight.png" />
+    <Content Include="Objects\Other Items\Fruit_Juice.png" />
+    <Content Include="Objects\Other Items\Furniture_Package.png" />
+    <Content Include="Objects\Other Items\Fur_Backpack.png" />
+    <Content Include="Objects\Other Items\Fur_Bag.png" />
+    <Content Include="Objects\Other Items\Garlic_Necklace.png" />
+    <Content Include="Objects\Other Items\Gauze_Bandage.png" />
+    <Content Include="Objects\Other Items\Gear_Crystal.png" />
+    <Content Include="Objects\Other Items\Gear_Wheel.png" />
+    <Content Include="Objects\Other Items\Gemmed_Book.png" />
+    <Content Include="Objects\Other Items\Geomancer%27s_Robe.png" />
+    <Content Include="Objects\Other Items\Giant_Shimmering_Pearl.png" />
+    <Content Include="Objects\Other Items\Goat_Grass.png" />
+    <Content Include="Objects\Other Items\Goblin_Statue.png" />
+    <Content Include="Objects\Other Items\God_Flowers.png" />
+    <Content Include="Objects\Other Items\Golden_Amulet.png" />
+    <Content Include="Objects\Other Items\Golden_Backpack.png" />
+    <Content Include="Objects\Other Items\Golden_Bag.png" />
+    <Content Include="Objects\Other Items\Golden_Goblet.png" />
+    <Content Include="Objects\Other Items\Golden_Key.png" />
+    <Content Include="Objects\Other Items\Golden_Mug.png" />
+    <Content Include="Objects\Other Items\Golden_Newspaper.png" />
+    <Content Include="Objects\Other Items\Golden_Sickle.png" />
+    <Content Include="Objects\Other Items\Gold_Coin.png" />
+    <Content Include="Objects\Other Items\Gold_Ingot.png" />
+    <Content Include="Objects\Other Items\Gold_Nugget.png" />
+    <Content Include="Objects\Other Items\Gold_Ring.png" />
+    <Content Include="Objects\Other Items\Golem_Disassembler.png" />
+    <Content Include="Objects\Other Items\Golem_Part.png" />
+    <Content Include="Objects\Other Items\Grapes.png" />
+    <Content Include="Objects\Other Items\Grave_Flower.png" />
+    <Content Include="Objects\Other Items\Great_Health_Potion.png" />
+    <Content Include="Objects\Other Items\Green_Backpack.png" />
+    <Content Include="Objects\Other Items\Green_Bag.png" />
+    <Content Include="Objects\Other Items\Green_Book.png" />
+    <Content Include="Objects\Other Items\Green_Cushioned_Chair.png" />
+    <Content Include="Objects\Other Items\Green_Flask.png" />
+    <Content Include="Objects\Other Items\Green_Gem.png" />
+    <Content Include="Objects\Other Items\Green_Key.png" />
+    <Content Include="Objects\Other Items\Green_Perch.png" />
+    <Content Include="Objects\Other Items\Green_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Green_Tome.png" />
+    <Content Include="Objects\Other Items\Greeting_Card.png" />
+    <Content Include="Objects\Other Items\Grey_Backpack.png" />
+    <Content Include="Objects\Other Items\Grey_Bag.png" />
+    <Content Include="Objects\Other Items\Grey_Small_Book.png" />
+    <Content Include="Objects\Other Items\Grey_Tome.png" />
+    <Content Include="Objects\Other Items\Ham.png" />
+    <Content Include="Objects\Other Items\Hammer.png" />
+    <Content Include="Objects\Other Items\Health_Potion.png" />
+    <Content Include="Objects\Other Items\Heart_Backpack.png" />
+    <Content Include="Objects\Other Items\Heaven_Blossom.png" />
+    <Content Include="Objects\Other Items\Heavily_Bound_Book.png" />
+    <Content Include="Objects\Other Items\Heavy_Machete.png" />
+    <Content Include="Objects\Other Items\Heavy_Machete~1.png" />
+    <Content Include="Objects\Other Items\Hoe.png" />
+    <Content Include="Objects\Other Items\Holy_Orchid.png" />
+    <Content Include="Objects\Other Items\Honey_Flower.png" />
+    <Content Include="Objects\Other Items\Hook.png" />
+    <Content Include="Objects\Other Items\Huge_Chunk_of_Crude_Iron.png" />
+    <Content Include="Objects\Other Items\Hunter%27s_Quiver.png" />
+    <Content Include="Objects\Other Items\Hunting_Spear.png" />
+    <Content Include="Objects\Other Items\Indoor_Plant.png" />
+    <Content Include="Objects\Other Items\Iron_Ore.png" />
+    <Content Include="Objects\Other Items\Jalapeño_Pepper.png" />
+    <Content Include="Objects\Other Items\Jewelled_Backpack %281%29.png" />
+    <Content Include="Objects\Other Items\Jewelled_Backpack.png" />
+    <Content Include="Objects\Other Items\Jewelled_Belt.png" />
+    <Content Include="Objects\Other Items\Jewel_Case.png" />
+    <Content Include="Objects\Other Items\Jug.png" />
+    <Content Include="Objects\Other Items\Knife.png" />
+    <Content Include="Objects\Other Items\Knight_Statue.png" />
+    <Content Include="Objects\Other Items\Kongra%27s_Shoulderpad.png" />
+    <Content Include="Objects\Other Items\Lamp.png" />
+    <Content Include="Objects\Other Items\Large_Trunk.png" />
+    <Content Include="Objects\Other Items\Lemon.png" />
+    <Content Include="Objects\Other Items\Lemonade.png" />
+    <Content Include="Objects\Other Items\Leviathan%27s_Amulet.png" />
+    <Content Include="Objects\Other Items\Lifefluid.png" />
+    <Content Include="Objects\Other Items\Life_Ring.png" />
+    <Content Include="Objects\Other Items\Lightning_Pendant.png" />
+    <Content Include="Objects\Other Items\Light_Shovel.png" />
+    <Content Include="Objects\Other Items\Locker %281%29.png" />
+    <Content Include="Objects\Other Items\Locker.png" />
+    <Content Include="Objects\Other Items\Lock_Pick.png" />
+    <Content Include="Objects\Other Items\Lottery_Ticket.png" />
+    <Content Include="Objects\Other Items\Lucky_Clover_Amulet.png" />
+    <Content Include="Objects\Other Items\Machete.png" />
+    <Content Include="Objects\Other Items\Machete~1.png" />
+    <Content Include="Objects\Other Items\Magical_Key.png" />
+    <Content Include="Objects\Other Items\Magical_Torch.png" />
+    <Content Include="Objects\Other Items\Magic_Light_Wand.png" />
+    <Content Include="Objects\Other Items\Magma_Amulet.png" />
+    <Content Include="Objects\Other Items\Mandrake.png" />
+    <Content Include="Objects\Other Items\Mango.png" />
+    <Content Include="Objects\Other Items\Map_%28Brown%29.png" />
+    <Content Include="Objects\Other Items\Map_to_the_Unknown.png" />
+    <Content Include="Objects\Other Items\Mead.png" />
+    <Content Include="Objects\Other Items\Meat.png" />
+    <Content Include="Objects\Other Items\Mechanical_Fishing_Rod.png" />
+    <Content Include="Objects\Other Items\Melon.png" />
+    <Content Include="Objects\Other Items\Message_in_a_Bottle.png" />
+    <Content Include="Objects\Other Items\Metal_Fitting.png" />
+    <Content Include="Objects\Other Items\Metal_Spike.png" />
+    <Content Include="Objects\Other Items\Might_Ring.png" />
+    <Content Include="Objects\Other Items\Milk.png" />
+    <Content Include="Objects\Other Items\Mining_Helmet.png" />
+    <Content Include="Objects\Other Items\Minotaur_Backpack.png" />
+    <Content Include="Objects\Other Items\Minotaur_Statue.png" />
+    <Content Include="Objects\Other Items\Mirror.png" />
+    <Content Include="Objects\Other Items\Model_Ship.png" />
+    <Content Include="Objects\Other Items\Modified_Crossbow.png" />
+    <Content Include="Objects\Other Items\Moon_Backpack.png" />
+    <Content Include="Objects\Other Items\Moon_Flower.png" />
+    <Content Include="Objects\Other Items\Mouldy_Cheese.png" />
+    <Content Include="Objects\Other Items\Mud.png" />
+    <Content Include="Objects\Other Items\Mug.png" />
+    <Content Include="Objects\Other Items\Nail.png" />
+    <Content Include="Objects\Other Items\Necromantic_Robe.png" />
+    <Content Include="Objects\Other Items\Noble_Turban.png" />
+    <Content Include="Objects\Other Items\Northern_Pike.png" />
+    <Content Include="Objects\Other Items\Note.png" />
+    <Content Include="Objects\Other Items\Obsidian_Knife.png" />
+    <Content Include="Objects\Other Items\Oil.png" />
+    <Content Include="Objects\Other Items\Old_and_Used_Backpack.png" />
+    <Content Include="Objects\Other Items\Old_Piece_of_Paper.png" />
+    <Content Include="Objects\Other Items\Old_Twig.png" />
+    <Content Include="Objects\Other Items\Onion.png" />
+    <Content Include="Objects\Other Items\Orange.png" />
+    <Content Include="Objects\Other Items\Orange_Backpack.png" />
+    <Content Include="Objects\Other Items\Orange_Bag.png" />
+    <Content Include="Objects\Other Items\Orange_Key.png" />
+    <Content Include="Objects\Other Items\Orange_Star.png" />
+    <Content Include="Objects\Other Items\Orichalcum_Pearl.png" />
+    <Content Include="Objects\Other Items\Oval_Mirror.png" />
+    <Content Include="Objects\Other Items\Oven.png" />
+    <Content Include="Objects\Other Items\Paper.png" />
+    <Content Include="Objects\Other Items\Parcel.png" />
+    <Content Include="Objects\Other Items\Parchment_%28Grey%29.png" />
+    <Content Include="Objects\Other Items\Parchment_%28Poetry%29.png" />
+    <Content Include="Objects\Other Items\Parchment_%28White%29.png" />
+    <Content Include="Objects\Other Items\Parchment_%28Yellow%29.png" />
+    <Content Include="Objects\Other Items\Pear.png" />
+    <Content Include="Objects\Other Items\Pendulum_Clock.png" />
+    <Content Include="Objects\Other Items\Pick.png" />
+    <Content Include="Objects\Other Items\Piece_of_Cactus.png" />
+    <Content Include="Objects\Other Items\Piece_of_Draconian_Steel.png" />
+    <Content Include="Objects\Other Items\Piece_of_Hell_Steel.png" />
+    <Content Include="Objects\Other Items\Piece_of_Iron.png" />
+    <Content Include="Objects\Other Items\Piece_of_Royal_Steel.png" />
+    <Content Include="Objects\Other Items\Pile_of_Bones.png" />
+    <Content Include="Objects\Other Items\Pirate_Backpack.png" />
+    <Content Include="Objects\Other Items\Pirate_Bag.png" />
+    <Content Include="Objects\Other Items\Pitchfork.png" />
+    <Content Include="Objects\Other Items\Plans_for_a_Strange_Device.png" />
+    <Content Include="Objects\Other Items\Platinum_Amulet.png" />
+    <Content Include="Objects\Other Items\Platinum_Coin.png" />
+    <Content Include="Objects\Other Items\Plum.png" />
+    <Content Include="Objects\Other Items\Potato.png" />
+    <Content Include="Objects\Other Items\Potted_Flower.png" />
+    <Content Include="Objects\Other Items\Power_Ring.png" />
+    <Content Include="Objects\Other Items\Present.png" />
+    <Content Include="Objects\Other Items\Protection_Amulet.png" />
+    <Content Include="Objects\Other Items\Pumpkin.png" />
+    <Content Include="Objects\Other Items\Pumpkinhead %281%29.png" />
+    <Content Include="Objects\Other Items\Pumpkinhead.png" />
+    <Content Include="Objects\Other Items\Purple_Backpack.png" />
+    <Content Include="Objects\Other Items\Purple_Bag.png" />
+    <Content Include="Objects\Other Items\Purple_Kiss_Blossom.png" />
+    <Content Include="Objects\Other Items\Purple_Robe.png" />
+    <Content Include="Objects\Other Items\Rainbow_Trout.png" />
+    <Content Include="Objects\Other Items\Rake.png" />
+    <Content Include="Objects\Other Items\Raspberry.png" />
+    <Content Include="Objects\Other Items\Red_Apple.png" />
+    <Content Include="Objects\Other Items\Red_Backpack.png" />
+    <Content Include="Objects\Other Items\Red_Bag.png" />
+    <Content Include="Objects\Other Items\Red_Cushioned_Chair.png" />
+    <Content Include="Objects\Other Items\Red_Gem.png" />
+    <Content Include="Objects\Other Items\Red_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Red_Rose.png" />
+    <Content Include="Objects\Other Items\Remains_of_a_Fish.png" />
+    <Content Include="Objects\Other Items\Research_Notes.png" />
+    <Content Include="Objects\Other Items\Ring_of_Healing.png" />
+    <Content Include="Objects\Other Items\Ring_of_the_Sky.png" />
+    <Content Include="Objects\Other Items\Ring_of_Wishes.png" />
+    <Content Include="Objects\Other Items\Rocking_Chair.png" />
+    <Content Include="Objects\Other Items\Roll.png" />
+    <Content Include="Objects\Other Items\Rope.png" />
+    <Content Include="Objects\Other Items\Rope_Belt.png" />
+    <Content Include="Objects\Other Items\Rotten_Meat.png" />
+    <Content Include="Objects\Other Items\Round_Mirror.png" />
+    <Content Include="Objects\Other Items\Royal_Crossbow.png" />
+    <Content Include="Objects\Other Items\Royal_Spear.png" />
+    <Content Include="Objects\Other Items\Ruby_Necklace.png" />
+    <Content Include="Objects\Other Items\Rum.png" />
+    <Content Include="Objects\Other Items\Sais.png" />
+    <Content Include="Objects\Other Items\Salmon.png" />
+    <Content Include="Objects\Other Items\Santa_Backpack.png" />
+    <Content Include="Objects\Other Items\Sapphire_Amulet.png" />
+    <Content Include="Objects\Other Items\Saw.png" />
+    <Content Include="Objects\Other Items\Scarf.png" />
+    <Content Include="Objects\Other Items\Scroll.png" />
+    <Content Include="Objects\Other Items\Scroll_of_Heroic_Deeds.png" />
+    <Content Include="Objects\Other Items\Scroll_of_the_Stolen_Moment.png" />
+    <Content Include="Objects\Other Items\Scythe.png" />
+    <Content Include="Objects\Other Items\Scythe~1.png" />
+    <Content Include="Objects\Other Items\Shamanic_Hood.png" />
+    <Content Include="Objects\Other Items\Shapeshifter_Ring.png" />
+    <Content Include="Objects\Other Items\Shimmer_Bow.png" />
+    <Content Include="Objects\Other Items\Shimmer_Glower.png" />
+    <Content Include="Objects\Other Items\Shiny_Stone.png" />
+    <Content Include="Objects\Other Items\Shovel.png" />
+    <Content Include="Objects\Other Items\Shrimp.png" />
+    <Content Include="Objects\Other Items\Sickle.png" />
+    <Content Include="Objects\Other Items\Signet_Ring.png" />
+    <Content Include="Objects\Other Items\Silkweaver_Bow.png" />
+    <Content Include="Objects\Other Items\Silver_Amulet.png" />
+    <Content Include="Objects\Other Items\Silver_Key.png" />
+    <Content Include="Objects\Other Items\Silver_Necklace.png" />
+    <Content Include="Objects\Other Items\Skeleton_%28Item%29.png" />
+    <Content Include="Objects\Other Items\Skinning_Knife.png" />
+    <Content Include="Objects\Other Items\Skull_%28Item%29.png" />
+    <Content Include="Objects\Other Items\Skull_Belt.png" />
+    <Content Include="Objects\Other Items\Skull_Candle.png" />
+    <Content Include="Objects\Other Items\Slime_%28Liquid%29.png" />
+    <Content Include="Objects\Other Items\Small_Amethyst.png" />
+    <Content Include="Objects\Other Items\Small_Axe.png" />
+    <Content Include="Objects\Other Items\Small_Bamboo_Shelf.png" />
+    <Content Include="Objects\Other Items\Small_Diamond.png" />
+    <Content Include="Objects\Other Items\Small_Emerald.png" />
+    <Content Include="Objects\Other Items\Small_Flask_of_Eyedrops.png" />
+    <Content Include="Objects\Other Items\Small_Health_Potion.png" />
+    <Content Include="Objects\Other Items\Small_Oil_Lamp.png" />
+    <Content Include="Objects\Other Items\Small_Orange_Pillow.png" />
+    <Content Include="Objects\Other Items\Small_Pillow.png" />
+    <Content Include="Objects\Other Items\Small_Purple_Pillow.png" />
+    <Content Include="Objects\Other Items\Small_Red_Pillow.png" />
+    <Content Include="Objects\Other Items\Small_Ruby.png" />
+    <Content Include="Objects\Other Items\Small_Sapphire.png" />
+    <Content Include="Objects\Other Items\Small_Stone.png" />
+    <Content Include="Objects\Other Items\Small_Table.png" />
+    <Content Include="Objects\Other Items\Small_Topaz.png" />
+    <Content Include="Objects\Other Items\Small_Turquoise_Pillow.png" />
+    <Content Include="Objects\Other Items\Small_White_Pillow.png" />
+    <Content Include="Objects\Other Items\Sneaky_Stabber_of_Eliteness.png" />
+    <Content Include="Objects\Other Items\Sniper_Gloves.png" />
+    <Content Include="Objects\Other Items\Snowman_Package.png" />
+    <Content Include="Objects\Other Items\Sofa_Chair.png" />
+    <Content Include="Objects\Other Items\Some_Leaves.png" />
+    <Content Include="Objects\Other Items\Some_Wood.png" />
+    <Content Include="Objects\Other Items\Soul_Contract.png" />
+    <Content Include="Objects\Other Items\Soul_Orb.png" />
+    <Content Include="Objects\Other Items\Spear.png" />
+    <Content Include="Objects\Other Items\Spellbook_%28Alternative%29.png" />
+    <Content Include="Objects\Other Items\Spiked_Iron_Ball.png" />
+    <Content Include="Objects\Other Items\Square_Table.png" />
+    <Content Include="Objects\Other Items\Squeezing_Gear_of_Girlpower.png" />
+    <Content Include="Objects\Other Items\Stamped_Letter.png" />
+    <Content Include="Objects\Other Items\Stamped_Parcel.png" />
+    <Content Include="Objects\Other Items\Standing_Mirror.png" />
+    <Content Include="Objects\Other Items\Star_Amulet.png" />
+    <Content Include="Objects\Other Items\Star_Ring.png" />
+    <Content Include="Objects\Other Items\Stealth_Ring.png" />
+    <Content Include="Objects\Other Items\Stone_Skin_Amulet.png" />
+    <Content Include="Objects\Other Items\Strange_Symbol.png" />
+    <Content Include="Objects\Other Items\Strawberry.png" />
+    <Content Include="Objects\Other Items\Strong_Health_Potion.png" />
+    <Content Include="Objects\Other Items\Sulphurous_Stone.png" />
+    <Content Include="Objects\Other Items\Suspicious_Documents.png" />
+    <Content Include="Objects\Other Items\Sweet_Mangonaise_Elixir.png" />
+    <Content Include="Objects\Other Items\Sword_Ring.png" />
+    <Content Include="Objects\Other Items\Table_Lamp %281%29.png" />
+    <Content Include="Objects\Other Items\Table_Lamp.png" />
+    <Content Include="Objects\Other Items\Tactical_Map.png" />
+    <Content Include="Objects\Other Items\Tapestry.png" />
+    <Content Include="Objects\Other Items\Tea.png" />
+    <Content Include="Objects\Other Items\Telescope.png" />
+    <Content Include="Objects\Other Items\Templar_Scytheblade.png" />
+    <Content Include="Objects\Other Items\The_Devileye.png" />
+    <Content Include="Objects\Other Items\The_Holy_Tible.png" />
+    <Content Include="Objects\Other Items\The_Ironworker.png" />
+    <Content Include="Objects\Other Items\Throwing_Knife.png" />
+    <Content Include="Objects\Other Items\Tibiacity_Encyclopedia.png" />
+    <Content Include="Objects\Other Items\Time_Ring.png" />
+    <Content Include="Objects\Other Items\Tomato.png" />
+    <Content Include="Objects\Other Items\Tome_of_Knowledge.png" />
+    <Content Include="Objects\Other Items\Torch.png" />
+    <Content Include="Objects\Other Items\Torn_Book.png" />
+    <Content Include="Objects\Other Items\Trap.png" />
+    <Content Include="Objects\Other Items\Trashed_Draken_Boots.png" />
+    <Content Include="Objects\Other Items\Treasure_Map.png" />
+    <Content Include="Objects\Other Items\Treasure_Map_%28Pirate%29.png" />
+    <Content Include="Objects\Other Items\Troll_Green.png" />
+    <Content Include="Objects\Other Items\Trophy_Stand.png" />
+    <Content Include="Objects\Other Items\Trough.png" />
+    <Content Include="Objects\Other Items\Tulip %281%29.png" />
+    <Content Include="Objects\Other Items\Tulip.png" />
+    <Content Include="Objects\Other Items\Tusk_Chair.png" />
+    <Content Include="Objects\Other Items\Tusk_Table.png" />
+    <Content Include="Objects\Other Items\Twiceslicer.png" />
+    <Content Include="Objects\Other Items\Twin_Hooks.png" />
+    <Content Include="Objects\Other Items\Unholy_Book.png" />
+    <Content Include="Objects\Other Items\Urine.png" />
+    <Content Include="Objects\Other Items\Used_Candelabrum.png" />
+    <Content Include="Objects\Other Items\Used_Candlestick.png" />
+    <Content Include="Objects\Other Items\Valentine%27s_Card.png" />
+    <Content Include="Objects\Other Items\Velvet_Tapestry.png" />
+    <Content Include="Objects\Other Items\Very_Noble-Looking_Watch.png" />
+    <Content Include="Objects\Other Items\Vial.png" />
+    <Content Include="Objects\Other Items\Violet_Gem.png" />
+    <Content Include="Objects\Other Items\Wall_Mirror.png" />
+    <Content Include="Objects\Other Items\Warmaster%27s_Wristguards.png" />
+    <Content Include="Objects\Other Items\War_Crystal.png" />
+    <Content Include="Objects\Other Items\War_Hammer.png" />
+    <Content Include="Objects\Other Items\Watch.png" />
+    <Content Include="Objects\Other Items\Watering_Can.png" />
+    <Content Include="Objects\Other Items\Waterskin.png" />
+    <Content Include="Objects\Other Items\Water_%28Liquid%29.png" />
+    <Content Include="Objects\Other Items\Water_Pipe.png" />
+    <Content Include="Objects\Other Items\Water_Pipe_%28Deluxe%29.png" />
+    <Content Include="Objects\Other Items\Weapon_Rack %281%29.png" />
+    <Content Include="Objects\Other Items\Weapon_Rack.png" />
+    <Content Include="Objects\Other Items\Wedding_Ring.png" />
+    <Content Include="Objects\Other Items\Whacking_Driller_of_Fate.png" />
+    <Content Include="Objects\Other Items\White_Pearl.png" />
+    <Content Include="Objects\Other Items\White_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Wine.png" />
+    <Content Include="Objects\Other Items\Witchesbroom.png" />
+    <Content Include="Objects\Other Items\Wolf_Tooth_Chain.png" />
+    <Content Include="Objects\Other Items\Wooden_Chair.png" />
+    <Content Include="Objects\Other Items\Wooden_Hammer.png" />
+    <Content Include="Objects\Other Items\Wooden_Key.png" />
+    <Content Include="Objects\Other Items\Wooden_Stake.png" />
+    <Content Include="Objects\Other Items\Wooden_Sword.png" />
+    <Content Include="Objects\Other Items\Wooden_Ties.png" />
+    <Content Include="Objects\Other Items\Worn_Firewalker_Boots.png" />
+    <Content Include="Objects\Other Items\Worn_Leather_Boots.png" />
+    <Content Include="Objects\Other Items\Worn_Soft_Boots.png" />
+    <Content Include="Objects\Other Items\Wyvern_Fang.png" />
+    <Content Include="Objects\Other Items\Yellow_Backpack.png" />
+    <Content Include="Objects\Other Items\Yellow_Bag.png" />
+    <Content Include="Objects\Other Items\Yellow_Gem.png" />
+    <Content Include="Objects\Other Items\Yellow_Piece_of_Cloth.png" />
+    <Content Include="Objects\Other Items\Yellow_Pillow.png" />
+    <Content Include="Objects\Other Items\Yellow_Rose.png" />
+    <Content Include="Objects\Other Items\Your_Student_Book.png" />
+    <Content Include="Objects\Other Items\Zaoan_Sword.png" />
+    <Content Include="Objects\Others\Bamboo_Wardrobe.png" />
+    <Content Include="Objects\Others\Big_Cask.png" />
+    <Content Include="Objects\Others\Cask.png" />
+    <Content Include="Objects\Others\Cask_of_Brown_Ale.png" />
+    <Content Include="Objects\Others\Corkscrew_Stairs.png" />
+    <Content Include="Objects\Others\Hole_%28Pitfall%29.png" />
+    <Content Include="Objects\Others\Hole_%28Rock%29.png" />
+    <Content Include="Objects\Others\Ladder_%28Bamboo%29.png" />
+    <Content Include="Objects\Others\Ladder_%28Rope%29.png" />
+    <Content Include="Objects\Others\Ladder_%28Wood%29.png" />
+    <Content Include="Objects\Others\Large_Hole.png" />
+    <Content Include="Objects\Others\Loose_Stone_Pile.png" />
+    <Content Include="Objects\Others\Pitfall.png" />
+    <Content Include="Objects\Others\Rain_Barrel.png" />
+    <Content Include="Objects\Others\Sarcophagus.png" />
+    <Content Include="Objects\Others\Sarcophagus_%28Open%29.png" />
+    <Content Include="Objects\Others\Stairs_%28Brown%29.png" />
+    <Content Include="Objects\Others\Stairs_%28Down%29.png" />
+    <Content Include="Objects\Others\Stairs_%28Stone%29.png" />
+    <Content Include="Objects\Others\Stairs_%28White%29.png" />
+    <Content Include="Objects\Others\Stairs_%28Wood%29.png" />
+    <Content Include="Objects\Others\Stone_Coffin.png" />
+    <Content Include="Objects\Others\Stone_Coffin_%28Blue%29.png" />
+    <Content Include="Objects\Others\Stone_Coffin_%28Red%29.png" />
+    <Content Include="Objects\Others\Stone_Coffin_%28Yellow%29.png" />
+    <Content Include="Objects\Others\Stone_Shelf.png" />
+    <Content Include="Objects\Others\Trapdoor.png" />
+    <Content Include="Objects\Others\Wardrobe.png" />
+    <Content Include="Objects\Others\Wooden_Coffin.png" />
+    <Content Include="Objects\Pillars\Broken_Stone_Pillar_%28Ancient%29.png" />
+    <Content Include="Objects\Pillars\Broken_Stone_Pillar_%28Stone%29.png" />
+    <Content Include="Objects\Pillars\Family_Banner.png" />
+    <Content Include="Objects\Pillars\Glowing_Skull_Pillar.png" />
+    <Content Include="Objects\Pillars\Large_Totem_Pole.png" />
+    <Content Include="Objects\Pillars\Mammoth_Totem.png" />
+    <Content Include="Objects\Pillars\Marble_Pillar.png" />
+    <Content Include="Objects\Pillars\Mast.png" />
+    <Content Include="Objects\Pillars\Orcish_Banner.png" />
+    <Content Include="Objects\Pillars\Orcish_Pole.png" />
+    <Content Include="Objects\Pillars\Orcish_Totem_Pole.png" />
+    <Content Include="Objects\Pillars\Oriental_Pillar.png" />
+    <Content Include="Objects\Pillars\Pillar_%28Object%29.png" />
+    <Content Include="Objects\Pillars\Sandstone_Pillar.png" />
+    <Content Include="Objects\Pillars\Sandstone_Statue_%28Pillar%29.png" />
+    <Content Include="Objects\Pillars\Small_Totem_Pole.png" />
+    <Content Include="Objects\Pillars\Snake_Pillar.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar_%28Ancient%29.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar_%28Kazordoon_Normal%29.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar_%28Kazordoon_Ornamented%29.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar_%28Kazordoon_Simple%29.png" />
+    <Content Include="Objects\Pillars\Stone_Pillar_%28Zao%29.png" />
+    <Content Include="Objects\Pillars\Totem_Pole.png" />
+    <Content Include="Objects\Tiles\Black_Marble_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Bog_Water_Tile.png" />
+    <Content Include="Objects\Tiles\Bridge_Tile.png" />
+    <Content Include="Objects\Tiles\Cobbled_Pavement_Tile.png" />
+    <Content Include="Objects\Tiles\Dirty_Water_Tile.png" />
+    <Content Include="Objects\Tiles\Dirt_Tile_%28Heavy%29.png" />
+    <Content Include="Objects\Tiles\Dirt_Tile_%28Light%29.png" />
+    <Content Include="Objects\Tiles\Dirt_Tile_%28Medium%29.png" />
+    <Content Include="Objects\Tiles\Drawbridge_Tile.png" />
+    <Content Include="Objects\Tiles\Dried_Grass_Roof_Tile.png" />
+    <Content Include="Objects\Tiles\Flat_Roof_Tile.png" />
+    <Content Include="Objects\Tiles\Glowing_Switch.png" />
+    <Content Include="Objects\Tiles\Grass_%28Tile%29.png" />
+    <Content Include="Objects\Tiles\Gravel_Tile.png" />
+    <Content Include="Objects\Tiles\Ice_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Ice_Tile.png" />
+    <Content Include="Objects\Tiles\Jungle_Grass_Tile.png" />
+    <Content Include="Objects\Tiles\Lava_Tile.png" />
+    <Content Include="Objects\Tiles\Ocean_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Pitch_Black_Gap.png" />
+    <Content Include="Objects\Tiles\Rock_Tile.png" />
+    <Content Include="Objects\Tiles\Sandstone_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Sand_Tile.png" />
+    <Content Include="Objects\Tiles\Shallow_Water_Tile.png" />
+    <Content Include="Objects\Tiles\Snow_Tile.png" />
+    <Content Include="Objects\Tiles\Stone_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Stone_Tile.png" />
+    <Content Include="Objects\Tiles\Strange_Carving_%28Tile%29.png" />
+    <Content Include="Objects\Tiles\Swamp_Tile.png" />
+    <Content Include="Objects\Tiles\Tiled_Roof_Tile.png" />
+    <Content Include="Objects\Tiles\Ventilation_Grille.png" />
+    <Content Include="Objects\Tiles\White_Marble_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\White_Stone_Tile.png" />
+    <Content Include="Objects\Tiles\Wooden_Floor_Tile.png" />
+    <Content Include="Objects\Tiles\Wooden_Floor_Tile_%28Yellow%29.png" />
+    <Content Include="Objects\Tiles\Wooden_Roof_Tile.png" />
+    <Content Include="Objects\Tools and utilities\Anvil.png" />
+    <Content Include="Objects\Tools and utilities\Block_of_Wood.png" />
+    <Content Include="Objects\Tools and utilities\Chest_%28Object%29.png" />
+    <Content Include="Objects\Tools and utilities\Coal_%28Object%29.png" />
+    <Content Include="Objects\Tools and utilities\Dustbin.png" />
+    <Content Include="Objects\Tools and utilities\Grappling_Hook.png" />
+    <Content Include="Objects\Tools and utilities\Hawser.png" />
+    <Content Include="Objects\Tools and utilities\Horn.png" />
+    <Content Include="Objects\Tools and utilities\Lever.png" />
+    <Content Include="Objects\Tools and utilities\Mailbox.png" />
+    <Content Include="Objects\Tools and utilities\Mailbox_%28Wooden%29.png" />
+    <Content Include="Objects\Tools and utilities\Pile_of_Chopped_Wood.png" />
+    <Content Include="Objects\Tools and utilities\Potion_Stand.png" />
+    <Content Include="Objects\Tools and utilities\Ship%27s_Telescope.png" />
+    <Content Include="Objects\Tools and utilities\Sundial.png" />
+    <Content Include="Objects\Tools and utilities\Target_Board.png" />
+    <Content Include="Objects\Tools and utilities\Test-Tube_Holder.png" />
+    <Content Include="Objects\Tools and utilities\Training_Dummy.png" />
+    <Content Include="Objects\Tools and utilities\Training_Dummy_%28Big%29.png" />
+    <Content Include="Objects\Tools and utilities\Treasure_Chest_%28Blue%29.png" />
+    <Content Include="Objects\Tools and utilities\Wooden_Planks.png" />
+    <Content Include="Objects\Tools and utilities\Wood_%28Bundle%29.png" />
+    <Content Include="Objects\Walls\Bamboo_Wall.png" />
+    <Content Include="Objects\Walls\Branch_Fence.png" />
+    <Content Include="Objects\Walls\Brick_Wall.png" />
+    <Content Include="Objects\Walls\Flowery_Wall.png" />
+    <Content Include="Objects\Walls\Framework_Wall.png" />
+    <Content Include="Objects\Walls\Framework_Wall_%28Carlin%29.png" />
+    <Content Include="Objects\Walls\Frozen_Wall.png" />
+    <Content Include="Objects\Walls\Fur_Wall.png" />
+    <Content Include="Objects\Walls\Grass_Wall.png" />
+    <Content Include="Objects\Walls\Ice_Wall.png" />
+    <Content Include="Objects\Walls\Iron_Wall.png" />
+    <Content Include="Objects\Walls\Lava_Wall.png" />
+    <Content Include="Objects\Walls\Limestone_Railing.png" />
+    <Content Include="Objects\Walls\Limestone_Wall.png" />
+    <Content Include="Objects\Walls\Linen.png" />
+    <Content Include="Objects\Walls\Mossy_Wall.png" />
+    <Content Include="Objects\Walls\Mountain_%28Wall%29.png" />
+    <Content Include="Objects\Walls\Ornamented_Wall.png" />
+    <Content Include="Objects\Walls\Palisade.png" />
+    <Content Include="Objects\Walls\Paravent.png" />
+    <Content Include="Objects\Walls\Sandstone_Wall.png" />
+    <Content Include="Objects\Walls\Ship_Cabin_Wall.png" />
+    <Content Include="Objects\Walls\Stone_Base.png" />
+    <Content Include="Objects\Walls\Stone_Railing.png" />
+    <Content Include="Objects\Walls\Stone_Wall.png" />
+    <Content Include="Objects\Walls\Stone_Wall_%28Ancient%29.png" />
+    <Content Include="Objects\Walls\Stone_Wall_%28Vengoth_Castle%29.png" />
+    <Content Include="Objects\Walls\Stone_Wall_%28Yalahar%29.png" />
+    <Content Include="Objects\Walls\Stone_Wall_%28Yellow%29.png" />
+    <Content Include="Objects\Walls\Tendril_Wall.png" />
+    <Content Include="Objects\Walls\Tree_Wall.png" />
+    <Content Include="Objects\Walls\White_Stone_Wall.png" />
+    <Content Include="Objects\Walls\Wooden_Bars.png" />
+    <Content Include="Objects\Walls\Wooden_Railing.png" />
+    <Content Include="Objects\Walls\Wooden_Wall.png" />
+    <Content Include="Objects\Walls\Wooden_Wall_%28Nordic%29.png" />
+    <Content Include="Objects\Weapons\930.png" />
+    <Content Include="Objects\Weapons\Arbalest.png" />
+    <Content Include="Objects\Weapons\Arrow.png" />
+    <Content Include="Objects\Weapons\Assassin_Dagger.png" />
+    <Content Include="Objects\Weapons\Axe.png" />
+    <Content Include="Objects\Weapons\Battle_Hammer.png" />
+    <Content Include="Objects\Weapons\Berserker.png" />
+    <Content Include="Objects\Weapons\Blacksteel_Sword.png" />
+    <Content Include="Objects\Weapons\Blade_of_Corruption.png" />
+    <Content Include="Objects\Weapons\Bloody_Edge.png" />
+    <Content Include="Objects\Weapons\Bolt.png" />
+    <Content Include="Objects\Weapons\Bone_Sword.png" />
+    <Content Include="Objects\Weapons\Bow.png" />
+    <Content Include="Objects\Weapons\Bright_Sword.png" />
+    <Content Include="Objects\Weapons\Broadsword.png" />
+    <Content Include="Objects\Weapons\Burst_Arrow.png" />
+    <Content Include="Objects\Weapons\Carlin_Sword.png" />
+    <Content Include="Objects\Weapons\Chain_Bolter.png" />
+    <Content Include="Objects\Weapons\Club_of_the_Fury.png" />
+    <Content Include="Objects\Weapons\Combat_Knife.png" />
+    <Content Include="Objects\Weapons\Composite_Hornbow.png" />
+    <Content Include="Objects\Weapons\Crimson_Sword.png" />
+    <Content Include="Objects\Weapons\Crossbow.png" />
+    <Content Include="Objects\Weapons\Crystal_Sword.png" />
+    <Content Include="Objects\Weapons\Dagger.png" />
+    <Content Include="Objects\Weapons\Demonrage_Sword.png" />
+    <Content Include="Objects\Weapons\Djinn_Blade.png" />
+    <Content Include="Objects\Weapons\Dragon_Slayer.png" />
+    <Content Include="Objects\Weapons\Earth_Arrow.png" />
+    <Content Include="Objects\Weapons\Elethriel%27s_Elemental_Bow.png" />
+    <Content Include="Objects\Weapons\Elvish_Bow.png" />
+    <Content Include="Objects\Weapons\Emerald_Sword.png" />
+    <Content Include="Objects\Weapons\Epee.png" />
+    <Content Include="Objects\Weapons\Farmer%27s_Avenger.png" />
+    <Content Include="Objects\Weapons\Flaming_Arrow.png" />
+    <Content Include="Objects\Weapons\Giant_Sword.png" />
+    <Content Include="Objects\Weapons\Golden_Sickle.png" />
+    <Content Include="Objects\Weapons\Hand_Axe.png" />
+    <Content Include="Objects\Weapons\Hatchet.png" />
+    <Content Include="Objects\Weapons\Havoc_Blade.png" />
+    <Content Include="Objects\Weapons\Heavy_Machete.png" />
+    <Content Include="Objects\Weapons\Hunting_Spear.png" />
+    <Content Include="Objects\Weapons\Iron_Hammer.png" />
+    <Content Include="Objects\Weapons\Jagged_Sword.png" />
+    <Content Include="Objects\Weapons\Katana.png" />
+    <Content Include="Objects\Weapons\Knife.png" />
+    <Content Include="Objects\Weapons\Longsword.png" />
+    <Content Include="Objects\Weapons\Machete.png" />
+    <Content Include="Objects\Weapons\Magic_Longsword.png" />
+    <Content Include="Objects\Weapons\Magic_Sword.png" />
+    <Content Include="Objects\Weapons\Mercenary_Sword.png" />
+    <Content Include="Objects\Weapons\Modified_Crossbow.png" />
+    <Content Include="Objects\Weapons\Mystic_Blade.png" />
+    <Content Include="Objects\Weapons\Nightmare_Blade.png" />
+    <Content Include="Objects\Weapons\Onyx_Arrow.png" />
+    <Content Include="Objects\Weapons\Pharaoh_Sword.png" />
+    <Content Include="Objects\Weapons\Piercing_Bolt.png" />
+    <Content Include="Objects\Weapons\Rapier.png" />
+    <Content Include="Objects\Weapons\Relic_Sword.png" />
+    <Content Include="Objects\Weapons\Ron_the_Ripper%27s_Sabre.png" />
+    <Content Include="Objects\Weapons\Royal_Crossbow.png" />
+    <Content Include="Objects\Weapons\Royal_Spear.png" />
+    <Content Include="Objects\Weapons\Runed_Sword.png" />
+    <Content Include="Objects\Weapons\Sabre.png" />
+    <Content Include="Objects\Weapons\Sais.png" />
+    <Content Include="Objects\Weapons\Scimitar.png" />
+    <Content Include="Objects\Weapons\Scythe.png" />
+    <Content Include="Objects\Weapons\Shimmer_Bow.png" />
+    <Content Include="Objects\Weapons\Short_Sword.png" />
+    <Content Include="Objects\Weapons\Silkweaver_Bow.png" />
+    <Content Include="Objects\Weapons\Silver_Dagger.png" />
+    <Content Include="Objects\Weapons\Small_Stone.png" />
+    <Content Include="Objects\Weapons\Sniper_Arrow.png" />
+    <Content Include="Objects\Weapons\Spear.png" />
+    <Content Include="Objects\Weapons\Spike_Sword.png" />
+    <Content Include="Objects\Weapons\Sword.png" />
+    <Content Include="Objects\Weapons\Templar_Scytheblade.png" />
+    <Content Include="Objects\Weapons\Thaian_Sword.png" />
+    <Content Include="Objects\Weapons\The_Avenger.png" />
+    <Content Include="Objects\Weapons\The_Devileye.png" />
+    <Content Include="Objects\Weapons\The_Epiphany.png" />
+    <Content Include="Objects\Weapons\The_Ironworker.png" />
+    <Content Include="Objects\Weapons\The_Justice_Seeker.png" />
+    <Content Include="Objects\Weapons\Throwing_Knife.png" />
+    <Content Include="Objects\Weapons\Twiceslicer.png" />
+    <Content Include="Objects\Weapons\Twin_Hooks.png" />
+    <Content Include="Objects\Weapons\Two_Handed_Sword.png" />
+    <Content Include="Objects\Weapons\Warlord_Sword.png" />
+    <Content Include="Objects\Weapons\Warsinger_Bow.png" />
+    <Content Include="Objects\Weapons\War_Hammer.png" />
+    <Content Include="Objects\Weapons\Wooden_Sword.png" />
+    <Content Include="Objects\Weapons\Wyvern_Fang.png" />
+    <Content Include="Objects\Weapons\Zaoan_Sword.png" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
